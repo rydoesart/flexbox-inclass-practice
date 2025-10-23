@@ -32,6 +32,9 @@ nav .wrapper {  /* centers the content and gives it negative space on either sid
 
 nav ul {
   list-style-type: none; /* removes the list bullets */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -52,6 +55,9 @@ nav li a:hover {
 /* end navigation */
 
 main {   /* centers the content and gives it negative space on either side */
+  display: flex;                  
+  align-items: stretch;     
+  gap: 30px;   
   padding: 15px;
   width: 800px;
   margin: auto;
@@ -76,7 +82,12 @@ article img {
 aside {
   border: 1px solid #43C6Ac;
   padding: 15px;
+  display: flex;
+  flex-direction: column;        
+  justify-content: space-between;
+       
 }
+
 
 footer {
   background-color: #191645;
